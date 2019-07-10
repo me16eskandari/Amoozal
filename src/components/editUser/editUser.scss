@@ -1,0 +1,62 @@
+$black : #000000;
+$white: #fff;
+$darkBlack : rgba($black, 0.87);
+$small-padding: 10px;
+$normal-padding: 20px;
+$header-height: 4em;
+$shadow: 0px 2px 5px -2px $darkBlack;
+$header-color: #465c6f;
+$header-back-color : #dfe5ea;
+
+.overlayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: .4);
+
+    .dialog {
+        width: 500px;
+        max-width: calc(100% - #{(2 * $normal-padding)});
+        max-height: calc(100vh - #{(3 * $normal-padding)} - #{$header-height});
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 5px;
+        background-color: $white;
+        -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+        box-shadow: $shadow;
+        overflow: auto;
+
+        .title {
+            border-radius: 5px;
+            padding: $small-padding $normal-padding;
+            background-color: $header-back-color;
+            -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+            box-shadow: $shadow;
+            color: $header-color;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1em;
+            margin: 0 0 10px;
+        }
+
+        .buttons {
+            padding: 10px 0;
+            text-align: right;
+
+            button {
+                margin: 0 10px;
+                padding: 5px;
+                border: 1px solid #465c6f;
+                background-color: #fff;
+                color: #465c6f;
+                cursor: pointer;
+                &:hover{
+                    background-color: #465c6f;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+$large-padding: 40px;
+$grey800 : #424242;
+$indigoA200 : #536dfe;
+
+.not-found{
+    min-height: unset;
+    height: auto;
+    padding: $large-padding;
+    text-align: center;
+    h1{
+        color: $grey800;
+    }
+    h3{
+        font-weight: 400;
+        a{
+            text-decoration: none;
+            color: $indigoA200;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+$black : #000000;
+$header-color: #465c6f;
+$darkBlack : rgba($black, 0.87);
+$header-height: 4em;
+$shadow: 0px 2px 5px -2px $darkBlack;
+$header-back-color : #dfe5ea;
+$normal-padding: 20px;
+
+header {
+    padding: 0 $normal-padding;
+    background-color: $header-back-color;
+    height: $header-height;
+    line-height: $header-height;
+    -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+    box-shadow: $shadow;
+
+    a.home-link {
+        color: $header-color;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+}

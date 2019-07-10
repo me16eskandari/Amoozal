@@ -1,0 +1,19 @@
+$black : #000000;
+$white: #fff;
+$darkBlack : rgba($black, 0.87);
+$small-padding: 10px;
+$normal-padding: 20px;
+$header-height: 4em;
+$shadow: 0px 2px 5px -2px $darkBlack;
+
+.panel {
+    width: 500px;
+    max-width: calc(100% - #{(2 * $normal-padding)});
+    max-height: calc(100vh - #{(3 * $normal-padding)} - #{$header-height});
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: $white;
+    -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+    box-shadow: $shadow;
+}

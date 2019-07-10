@@ -1,0 +1,21 @@
+$black : #000000;
+$darkBlack : rgba($black, 0.87);
+$shadow: 0px 2px 5px -2px $darkBlack;
+
+.wrapper{
+    margin: 20px;
+    width: unset;
+    overflow: auto;    
+}
+.notif{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    background-color: #00897b;
+    color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+    box-shadow: $shadow;
+}
